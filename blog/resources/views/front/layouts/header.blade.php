@@ -53,7 +53,9 @@
 </nav>
 
 
-<header class="masthead" style="background-image: url('{{asset('front/')}}/img/home-bg.jpg')">
+<header class="masthead"
+
+        style="background-image: url('@yield('bg',asset('front/img/home-bg.jpg'))')">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -68,5 +70,3 @@
 
 <div class="container">
     <div class="row">
-
-

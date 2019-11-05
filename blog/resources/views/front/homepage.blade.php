@@ -7,7 +7,7 @@
         <div class="col-md-9 mx-auto">
             @foreach($articles as $article)
             <div class="post-preview">
-                <a href="{{route('single',$article->slug)}}">
+                <a href="{{route('single',[$article->getCategory->slug,$article->slug])}}">
                     <h2 class="post-title">
                         {{$article->title}}
                     </h2>

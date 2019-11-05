@@ -12,4 +12,4 @@
 */
 
 Route::get('/', 'Front\Homepage@index') -> name('homepage');
-Route::get('/blog/{slug}','Front\Homepage@single')->name('single');
+Route::get('/{category}/{slug}','Front\Homepage@single')->name('single');

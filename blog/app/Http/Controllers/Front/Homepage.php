@@ -14,12 +14,11 @@ class Homepage extends Controller
         $data['categories']=Category::orderBy('name','ASC')->get();
         return view('front.homepage',$data);
     }
-    public function single($slug){
-        $data['article']=Article::whereSlug($slug)->first() ?? abort(403,'Böyle bir yazı bulunamadı.');
-
-
-
-
+    public function single($category, $slug){
+        $category=Category::whereSlug($category)->first() ?? abort(403,'Böyle bir yazı bulunamadı.');
+        $article=Article::whereSlug($slug)->whereCategoryId($category->id)->first() ?? abort(403,'Böyle bir yazı bulunamadı.');
+        $article->increment('hit');
+        $data['article']=$article;
         $data['categories']=Category::orderBy('name','ASC')->get();
         return view('front.single',$data);
 
