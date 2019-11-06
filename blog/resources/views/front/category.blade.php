@@ -1,5 +1,5 @@
 @extends('front.layouts.master')
-@section('title','VBlog')
+@section('title',$category->name.' Kategorisi | '.count($articles).' yazı bulundu.')
 @section('content')
     <div class="col-md-9 mx-auto">
         @if(count($articles)>0)
@@ -27,9 +27,7 @@
                 <center><h1>Bu kategoriye ait yazı bulunmamaktadır.</h1></center>
             </div>
         @endif
-        <div class="float-center">
-            {{$articles->links()}}
-        </div>
+
     </div>
     @include('front\widgets\categoryWidget')
 @endsection

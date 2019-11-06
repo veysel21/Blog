@@ -108,6 +108,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/front" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -146,6 +147,7 @@
       <workItem from="1572592327434" duration="599000" />
       <workItem from="1572850315988" duration="15647000" />
       <workItem from="1572938076247" duration="12465000" />
+      <workItem from="1573022367124" duration="6364000" />
     </task>
     <servers />
   </component>
