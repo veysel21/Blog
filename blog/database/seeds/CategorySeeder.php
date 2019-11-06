@@ -12,15 +12,15 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        $categories=['Eğlence','Bilişim','Gezi','Teknoloji','Sağlık','Spor','Günlük Yaşam'];
-        foreach ($categories as $category){
+        $categories = ['Eğlence', 'Bilişim', 'Gezi', 'Teknoloji', 'Sağlık', 'Spor', 'Günlük Yaşam'];
+        foreach ($categories as $category) {
 
-        DB::table('categories')->insert([
-            'name'=>$category,
-            'slug'=>str_slug($category),
-            'created_at'=>now(),
-            'updated_at'=>now()
-        ]);
+            DB::table('categories')->insert([
+                'name' => $category,
+                'slug' => str_slug($category),
+                'created_at' => now(),
+                'updated_at' => now()
+            ]);
         }
     }
 }

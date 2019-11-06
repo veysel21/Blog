@@ -27,7 +27,6 @@
                 <center><h1>Bu kategoriye ait yazı bulunmamaktadır.</h1></center>
             </div>
         @endif
-
     </div>
     @include('front\widgets\categoryWidget')
 @endsection

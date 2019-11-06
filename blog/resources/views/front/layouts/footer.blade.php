@@ -16,15 +16,7 @@
                   <i class="fab fa-slack fa-stack-1x fa-inverse"></i>
                 </span>
                         </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-                        </a>
-                    </li>
+
                     <li class="list-inline-item">
                         <a href="https://github.com/veysel21">
                 <span class="fa-stack fa-lg">
@@ -41,11 +33,11 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="{{asset('front/')}}'vendor/jquery/jquery.min.js"></script>
-<script src="{{asset('front/')}}'vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('front/')}}/vendor/jquery/jquery.min.js"></script>
+<script src="{{asset('front/')}}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Custom scripts for this template -->
-<script src="{{asset('front/')}}'js/clean-blog.min.js"></script>
+<script src="{{asset('front/')}}/js/clean-blog.min.js"></script>
 
 </body>
 
