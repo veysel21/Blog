@@ -26,7 +26,7 @@
                         </a>
                     </li>
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; VBlog Website 2019</p>
+                <p class="copyright text-muted">Copyright &copy; VBlog Website {{date('Y')}}</p>
             </div>
         </div>
     </div>

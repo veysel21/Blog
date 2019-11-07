@@ -10,6 +10,9 @@ use App\Models\Category;
 use App\Models\Page;
 use App\Models\Contact;
 use Validator;
+use Illuminate\Http\Request as RequestAlias;
+use App\Http\Requests;
+use Illuminate\Foundation\Validation\ValidatesRequests;
 
 class Homepage extends Controller
 {
@@ -54,7 +57,7 @@ class Homepage extends Controller
         return view('front.contact');
     }
 
-    public function contactpost(Request $request)
+    public function contactpost(RequestAlias $request)
     {
         $rules = [
             'name' => 'required|min:5',
@@ -66,9 +69,10 @@ class Homepage extends Controller
 
         $validate = Validator::make($request->post(), $rules);
 
-        if ($validate->errors()) {
+        if ($validate->fails()) {
             return redirect()->route('contact')->withErrors($validate)->withInput();
         }
+
         $contact = new Contact;
         $contact->name = $request->name;
         $contact->email = $request->email;

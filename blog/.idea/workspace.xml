@@ -107,11 +107,14 @@
   <component name="ProjectId" id="1SyCbsxoIEEABrxK8yyBGkGt8HJ" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/front" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/aaaa/GD-16da5815f132af36755fec94131c24b6e4091c15/blog" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\B\blog\public\back\img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\B\blog\resources\views\front" />
     </key>
@@ -149,6 +152,7 @@
       <workItem from="1572850315988" duration="15647000" />
       <workItem from="1572938076247" duration="12465000" />
       <workItem from="1573022367124" duration="19361000" />
+      <workItem from="1573109235610" duration="16768000" />
     </task>
     <servers />
   </component>

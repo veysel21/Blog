@@ -1,14 +1,21 @@
 <?php
+/*
+|--------------------------------------------------------------------------
+| Backend Routes
+|--------------------------------------------------------------------------
+
+*/
+
+Route::get('admin/panel','Back\Dashboard@index')->name('admin.dashboard');
+Route::get('admin/giris','Back\Auth@login')->name('admin.login');
+
+
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Fronted Routes
 |--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
+
 */
 
 Route::get('/', 'Front\Homepage@index') -> name('homepage');
@@ -17,3 +24,5 @@ Route::post('/iletisim','Front\Homepage@contactpost')->name('contact.post');
 Route::get('/kategori/{category}','Front\Homepage@category')->name('category');
 Route::get('/{category}/{slug}','Front\Homepage@single')->name('single');
 Route::get('/{sayfa}','Front\Homepage@page')->name('page');
+
+
