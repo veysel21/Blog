@@ -2,6 +2,7 @@
 @section('title','İletişim')
 @section('bg','https://blackrockdigital.github.io/startbootstrap-clean-blog/img/contact-bg.jpg')
 @section('content')
+
     <div class="col-md-8">
         @if(session('success'))
             <div class="alert alert-success">
@@ -63,11 +64,19 @@
         </form>
     </div>
     <div class="col-md-4">
-        <div class="card card-default">
+        <div class="card-header">
             <div class="card-body">
-                Panel
+                Bilgilerim
             </div>
-            Adres: sadasdasd
+        </div>
+        <div class="card-header">
+            <div class="card-body">
+                Veysel YILDIRIM</br></br>
+                +90 534 877 7632</br></br>
+                veyselyyildirim@gmail.com</br></br>
+                Adnan menderes mahallesi Kıralan Dink mevki Ömer 2 Sitesi D Blok Kat 2 No 10
+            </div>
+
         </div>
     </div>
 @endsection

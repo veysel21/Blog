@@ -7,6 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <script language="Javascript1.2">
+
+        var mymessage = "Bu siteden içerik kopyalamak yasaktır.!!";
+        function rtclickcheck(keyp){
+            if (navigator.appName == "Netscape" && keyp.which == 3) {
+                alert(mymessage);
+                return false;
+            }
+
+            if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) {
+                alert(mymessage);
+                return false;
+            }
+
+        }
+
+        document.onmousedown = rtclickcheck
+
+    </script>
 
     <title>@yield('title','Blog Sitesi')</title>
 
