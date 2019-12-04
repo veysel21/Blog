@@ -11,7 +11,7 @@
                         </h2>
                         <img src="{{$article->image}}"/>
                         <h3 class="post-subtitle">
-                            {!! str_limit($article->content,100)!!}
+                            {!! str_limit($article->content,50)!!}
                         </h3>
                     </a>
                     <p class="post-meta"> Kategori :

@@ -34,6 +34,7 @@ class Homepage extends Controller
         return view('front.single', $data);
     }
 
+
     public function category($slug)
     {
         $category = Category::whereSlug($slug)->first() ?? abort(403, 'Böyle bir kategori bulunamadı.');

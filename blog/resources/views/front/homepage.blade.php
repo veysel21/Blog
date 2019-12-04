@@ -9,9 +9,9 @@
                         <h2 class="post-title">
                             {{$article->title}}
                         </h2>
-                        <img src="{{$article->image}}"/>
+                        <img src="{{$article->image}}" width="800"/>
                         <h3 class="post-subtitle">
-                            {!! str_limit($article->content,100)!!}
+                            {!! str_limit($article->content,150)!!}
                         </h3>
                     </a>
                     <p class="post-meta"> Kategori :
@@ -22,6 +22,7 @@
                     <hr>
                 @endif
             @endforeach
+
         @else
             <div class="alert alert-danger">
                 <center><h1>Bu kategoriye ait yazı bulunmamaktadır.</h1></center>

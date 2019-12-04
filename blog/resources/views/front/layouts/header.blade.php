@@ -7,25 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <script language="Javascript1.2">
+{{--    <script language="Javascript1.2">--}}
 
-        var mymessage = "Bu siteden içerik kopyalamak yasaktır.!!";
-        function rtclickcheck(keyp){
-            if (navigator.appName == "Netscape" && keyp.which == 3) {
-                alert(mymessage);
-                return false;
-            }
+{{--        var mymessage = "Bu siteden içerik kopyalamak yasaktır.!!";--}}
+{{--        function rtclickcheck(keyp){--}}
+{{--            if (navigator.appName == "Netscape" && keyp.which == 3) {--}}
+{{--                alert(mymessage);--}}
+{{--                return false;--}}
+{{--            }--}}
 
-            if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) {
-                alert(mymessage);
-                return false;
-            }
+{{--            if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) {--}}
+{{--                alert(mymessage);--}}
+{{--                return false;--}}
+{{--            }--}}
 
-        }
+{{--        }--}}
 
-        document.onmousedown = rtclickcheck
+{{--        document.onmousedown = rtclickcheck--}}
 
-    </script>
+{{--    </script>--}}
 
     <title>@yield('title','Blog Sitesi')</title>
 
@@ -70,9 +70,31 @@
                         <a class="nav-link" href="{{route('page',$page->slug)}}">{{$page->title}}</a>
                     </li>
                 @endforeach
+
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('contact')}}">İletişim</a>
                 </li>
+
+                @if (Route::has('login'))
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                        @auth
+{{--                            <li class="nav-item">--}}
+{{--                                <a class="nav-link" href="{{ url('home') }}">{{Auth::user()->name}}</a>--}}
+{{--                            </li>--}}
+                        @else
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">Giriş Yap</a>
+                            </li>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">Kayıt OL</a>
+                                </li>
+                            @endif
+                        @endauth
+                        </ul>
+                    </div>
+                @endif
             </ul>
         </div>
     </div>

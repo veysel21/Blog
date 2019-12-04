@@ -106,24 +106,33 @@
       <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
       <path value="$PROJECT_DIR$/vendor/laravel/helpers" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/almasaeed2010/adminlte" />
+      <path value="$PROJECT_DIR$/vendor/jeroennoten/laravel-adminlte" />
+      <path value="$PROJECT_DIR$/vendor/yoeunes/toastr" />
     </include_path>
   </component>
   <component name="ProjectId" id="1SyCbsxoIEEABrxK8yyBGkGt8HJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/back/articles" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\B\blog\public\back\img" />
-      <recent name="C:\xampp\htdocs\B\blog\public\back\2" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\B\blog\resources\views\back\articles" />
+      <recent name="C:\xampp\htdocs\B\blog\app\Http\Controllers\Back" />
+      <recent name="C:\xampp\htdocs\B\blog\resources\views\back\add_articles" />
+      <recent name="C:\xampp\htdocs\B\blog\app\Http\Controllers" />
+      <recent name="C:\xampp\htdocs\B\blog\resources\views\back" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\B\blog\app" />
-      <recent name="C:\xampp\htdocs\B\blog\resources\views\front" />
+      <recent name="C:\xampp\htdocs\B\blog\app\Http" />
+      <recent name="C:\xampp\htdocs\B\blog\app\Http\Controllers" />
+      <recent name="C:\xampp\htdocs\B\blog\app\Http\Controllers\Auth" />
+      <recent name="C:\xampp\htdocs\B\blog\app\Http\Controllers\Back" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -167,6 +176,20 @@
       <workItem from="1573480101904" duration="867000" />
       <workItem from="1573491127592" duration="95000" />
       <workItem from="1573541703191" duration="693000" />
+      <workItem from="1573628164780" duration="13760000" />
+      <workItem from="1573713348040" duration="2342000" />
+      <workItem from="1573717507926" duration="5162000" />
+      <workItem from="1573802022975" duration="3534000" />
+      <workItem from="1574078177068" duration="973000" />
+      <workItem from="1574147702010" duration="10747000" />
+      <workItem from="1574190682695" duration="1078000" />
+      <workItem from="1574192408952" duration="994000" />
+      <workItem from="1574194470729" duration="20000" />
+      <workItem from="1574253684519" duration="3000000" />
+      <workItem from="1574325792089" duration="2378000" />
+      <workItem from="1574792300050" duration="231000" />
+      <workItem from="1575355353979" duration="6614000" />
+      <workItem from="1575445952128" duration="14997000" />
     </task>
     <servers />
   </component>
